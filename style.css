@@ -115,12 +115,10 @@ ul { list-style: none; }
   transition: all var(--transition);
 }
 
-/* === PAGES === */
+
 .page { min-height: 100vh; }
 
-/* ==================
-   HOME PAGE
-   ================== */
+
 .page-home {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -285,9 +283,6 @@ ul { list-style: none; }
   flex-shrink: 0;
 }
 
-/* ==================
-   MENU PAGE
-   ================== */
 .page-menu {
   background: var(--cream);
   padding: calc(var(--nav-h) + 3rem) 6% 5rem;
@@ -543,9 +538,6 @@ ul { list-style: none; }
   border-radius: var(--radius-sm);
 }
 
-/* ==================
-   BUTTONS
-   ================== */
 .btn {
   display: inline-flex;
   align-items: center; justify-content: center;
@@ -596,9 +588,6 @@ ul { list-style: none; }
   transform: translateY(-1px);
 }
 
-/* ==================
-   FOOTER
-   ================== */
 .footer {
   background: var(--espresso);
   padding: 2rem 6%;
@@ -632,9 +621,6 @@ ul { list-style: none; }
 }
 .footer-links a:hover { color: var(--cream); }
 
-/* ==================
-   ANIMATIONS
-   ================== */
 @keyframes fadeUp {
   from { opacity: 0; transform: translateY(28px); }
   to   { opacity: 1; transform: translateY(0); }
@@ -648,9 +634,6 @@ ul { list-style: none; }
   50% { opacity: 0.3; }
 }
 
-/* ==================
-   RESPONSIVE
-   ================== */
 @media (max-width: 1024px) {
   .page-home {
     grid-template-columns: 1fr 1fr;
