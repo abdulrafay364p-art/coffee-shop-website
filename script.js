@@ -1,14 +1,8 @@
-/* =========================================
-   BREWED & CO. — JavaScript
-   ========================================= */
-
-// === NAVBAR SCROLL EFFECT ===
 const navbar = document.getElementById('navbar');
 window.addEventListener('scroll', () => {
   navbar.classList.toggle('scrolled', window.scrollY > 20);
 });
 
-// === MOBILE NAV TOGGLE ===
 const navToggle = document.getElementById('navToggle');
 const navLinks  = document.getElementById('navLinks');
 
@@ -25,7 +19,6 @@ navToggle.addEventListener('click', () => {
   }
 });
 
-// Close nav when a link is clicked
 document.querySelectorAll('.nav-link, .nav-cta').forEach(link => {
   link.addEventListener('click', () => {
     navLinks.classList.remove('open');
@@ -34,7 +27,6 @@ document.querySelectorAll('.nav-link, .nav-cta').forEach(link => {
   });
 });
 
-// === ACTIVE NAV LINK ON SCROLL ===
 const sections = document.querySelectorAll('.page[id]');
 const navLinksAll = document.querySelectorAll('.nav-link');
 
@@ -50,7 +42,6 @@ const observer = new IntersectionObserver((entries) => {
 
 sections.forEach(section => observer.observe(section));
 
-// === MENU TABS ===
 const tabBtns  = document.querySelectorAll('.tab-btn');
 const tabDrinks = document.getElementById('tab-drinks');
 const tabFood   = document.getElementById('tab-food');
@@ -65,7 +56,6 @@ tabBtns.forEach(btn => {
   });
 });
 
-// === CONTACT FORM ===
 const contactForm = document.getElementById('contactForm');
 const formSuccess = document.getElementById('formSuccess');
 
@@ -81,14 +71,12 @@ contactForm.addEventListener('submit', (e) => {
     return;
   }
 
-  // Email validation
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   if (!emailRegex.test(email)) {
     alert('Please enter a valid email address.');
     return;
   }
 
-  // Simulate submission (replace with real backend/Formspree/etc.)
   const submitBtn = contactForm.querySelector('button[type="submit"]');
   submitBtn.textContent = 'Sending…';
   submitBtn.disabled = true;
@@ -102,7 +90,6 @@ contactForm.addEventListener('submit', (e) => {
   }, 1200);
 });
 
-// === SCROLL REVEAL ANIMATION ===
 const revealEls = document.querySelectorAll('.menu-card, .info-block, .contact-form-wrap, .map-wrap');
 
 const revealObserver = new IntersectionObserver((entries) => {
@@ -115,7 +102,6 @@ const revealObserver = new IntersectionObserver((entries) => {
   });
 }, { threshold: 0.1 });
 
-// Add base style for reveal
 const style = document.createElement('style');
 style.textContent = `
   .menu-card, .info-block, .contact-form-wrap, .map-wrap {
