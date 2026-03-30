@@ -34,4 +34,4 @@ Check it live here: [Brewed Coffee Shop](https://brewedcoffeeshop.netlify.app/)
 ---
 
 Created by **Abdul Rafay**  
-Portfolio & GitHub: [Your GitHub Link Here]
+Portfolio & GitHub: [https://github.com/abdulrafay364p-art]
