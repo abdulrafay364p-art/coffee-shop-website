@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Brewed & Co. — Specialty Coffee</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <a href="#home" class="nav-logo">Brewed <span>&</span> Co.</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home" class="nav-link active">Home</a></li>
+      <li><a href="#menu" class="nav-link">Menu</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+      <li><a href="#menu" class="nav-cta">Order Now</a></li>
+    </ul>
+  </nav>
+
+  <!-- HOME PAGE -->
+  <section id="home" class="page page-home">
+
+    <div class="hero-bg">
+      <div class="hero-grain"></div>
+      <div class="hero-circle hero-circle--1"></div>
+      <div class="hero-circle hero-circle--2"></div>
+    </div>
+
+    <div class="hero-content">
+      <p class="hero-eyebrow">Specialty Coffee · Since 2018</p>
+      <h1 class="hero-headline">Every cup<br/><em>tells a story.</em></h1>
+      <p class="hero-sub">Hand-crafted espresso drinks, fresh pastries, and a warm corner to call your own.</p>
+      <div class="hero-actions">
+        <a href="#menu" class="btn btn-primary">Explore the Menu</a>
+        <a href="#contact" class="btn btn-ghost">Find Us</a>
+      </div>
+    </div>
+
+    <div class="hero-image-wrap">
+      <div class="hero-image-frame">
+        <img
+          src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=900&auto=format&fit=crop&q=80"
+          alt="A beautifully crafted latte on a wooden table"
+          class="hero-img"
+          loading="eager"
+        />
+        <div class="hero-badge">
+          <span class="badge-number">4.9</span>
+          <span class="badge-label">★★★★★<br/>200+ reviews</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-scroll-hint">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+
+    <!-- Features strip -->
+    <div class="features-strip">
+      <div class="feature">
+        <div class="feature-icon">☕</div>
+        <div class="feature-text">
+          <strong>Single-Origin Beans</strong>
+          <span>Sourced from 3 continents</span>
+        </div>
+      </div>
+      <div class="feature-divider"></div>
+      <div class="feature">
+        <div class="feature-icon">🥐</div>
+        <div class="feature-text">
+          <strong>Fresh Daily Bakes</strong>
+          <span>Baked in-house every morning</span>
+        </div>
+      </div>
+      <div class="feature-divider"></div>
+      <div class="feature">
+        <div class="feature-icon">🌿</div>
+        <div class="feature-text">
+          <strong>Plant Milk Options</strong>
+          <span>Oat, almond & soy available</span>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- MENU PAGE -->
+  <section id="menu" class="page page-menu">
+
+    <div class="section-header">
+      <p class="section-eyebrow">What we serve</p>
+      <h2 class="section-title">Our Menu</h2>
+      <p class="section-sub">Made fresh, made with love — every single time.</p>
+    </div>
+
+    <div class="menu-tabs">
+      <button class="tab-btn active" data-tab="drinks">☕ Drinks</button>
+      <button class="tab-btn" data-tab="food">🥐 Food</button>
+    </div>
+
+    <!-- Drinks -->
+    <div class="menu-grid" id="tab-drinks">
+      <div class="menu-card">
+        <div class="menu-card-img-wrap">
+          <img src="https://images.unsplash.com/photo-1541167760496-1628856ab772?w=400&auto=format&fit=crop&q=75" alt="Espresso" loading="lazy" />
+        </div>
+        <div class="menu-card-body">
+          <h3>Espresso</h3>
+          <p>Rich, bold shot of our house blend — pure and unapologetic.</p>
+          <div class="menu-card-footer">
+            <span class="price">$3.50</span>
+            <a href="#contact" class="btn btn-sm">Order</a>
+          </div>
+        </div>
+      </div>
+      <div class="menu-card">
+        <div class="menu-card-img-wrap">
+          <img src="https://images.unsplash.com/photo-1561047029-3000c68339ca?w=400&auto=format&fit=crop&q=75" alt="Flat White" loading="lazy" />
+        </div>
+        <div class="menu-card-body">
+          <h3>Flat White</h3>
+          <p>Velvety microfoam over a double ristretto. Smooth & silky.</p>
+          <div class="menu-card-footer">
+            <span class="price">$5.00</span>
+            <a href="#contact" class="btn btn-sm">Order</a>
+          </div>
+        </div>
+      </div>
+      <div class="menu-card">
+        <div class="menu-card-img-wrap">
+          <img src="https://images.unsplash.com/photo-1534778101976-62847782c213?w=400&auto=format&fit=crop&q=75" alt="Caramel Latte" loading="lazy" />
+        </div>
+        <div class="menu-card-body">
+          <h3>Caramel Latte</h3>
+          <p>House espresso, steamed milk, swirled with salted caramel.</p>
+          <div class="menu-card-footer">
+            <span class="price">$6.00</span>
+            <a href="#contact" class="btn btn-sm">Order</a>
+          </div>
+        </div>
+      </div>
+      <div class="menu-card">
+        <div class="menu-card-img-wrap">
+          <img src="https://images.unsplash.com/photo-1570968915860-54d5c301fa9f?w=400&auto=format&fit=crop&q=75" alt="Cold Brew" loading="lazy" />
+        </div>
+        <div class="menu-card-body">
+          <h3>Cold Brew</h3>
+          <p>Steeped 18 hours for a smooth, chocolatey iced coffee experience.</p>
+          <div class="menu-card-footer">
+            <span class="price">$5.50</span>
+            <a href="#contact" class="btn btn-sm">Order</a>
+          </div>
+        </div>
+      </div>
+      <div class="menu-card">
+        <div class="menu-card-img-wrap">
+          <img src="https://images.unsplash.com/photo-1520031559893-78e3e79e0a78?w=400&auto=format&fit=crop&q=75" alt="Matcha Latte" loading="lazy" />
+        </div>
+        <div class="menu-card-body">
+          <h3>Matcha Latte</h3>
+          <p>Ceremonial-grade matcha whisked into oat milk. Earthy & sweet.</p>
+          <div class="menu-card-footer">
+            <span class="price">$6.50</span>
+            <a href="#contact" class="btn btn-sm">Order</a>
+          </div>
+        </div>
+      </div>
+      <div class="menu-card menu-card--featured">
+        <span class="badge-tag">Staff Pick</span>
+        <div class="menu-card-img-wrap">
+          <img src="https://images.unsplash.com/photo-1572442388796-11668a67e53d?w=400&auto=format&fit=crop&q=75" alt="Signature Brew" loading="lazy" />
+        </div>
+        <div class="menu-card-body">
+          <h3>Signature Brew</h3>
+          <p>Our secret recipe — a seasonal rotating blend you'll keep coming back for.</p>
+          <div class="menu-card-footer">
+            <span class="price">$7.00</span>
+            <a href="#contact" class="btn btn-sm">Order</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Food -->
+    <div class="menu-grid hidden" id="tab-food">
+      <div class="menu-card">
+        <div class="menu-card-img-wrap">
+          <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?w=400&auto=format&fit=crop&q=75" alt="Croissant" loading="lazy" />
+        </div>
+        <div class="menu-card-body">
+          <h3>Butter Croissant</h3>
+          <p>Flaky, golden layers baked fresh every morning in-house.</p>
+          <div class="menu-card-footer">
+            <span class="price">$4.00</span>
+            <a href="#contact" class="btn btn-sm">Order</a>
+          </div>
+        </div>
+      </div>
+      <div class="menu-card">
+        <div class="menu-card-img-wrap">
+          <img src="https://images.unsplash.com/photo-1464305795204-6f5bbfc7fb81?w=400&auto=format&fit=crop&q=75" alt="Banana Bread" loading="lazy" />
+        </div>
+        <div class="menu-card-body">
+          <h3>Banana Bread</h3>
+          <p>Moist, walnut-studded loaf with a hint of cinnamon and honey.</p>
+          <div class="menu-card-footer">
+            <span class="price">$4.50</span>
+            <a href="#contact" class="btn btn-sm">Order</a>
+          </div>
+        </div>
+      </div>
+      <div class="menu-card">
+        <div class="menu-card-img-wrap">
+          <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?w=400&auto=format&fit=crop&q=75" alt="Bagel" loading="lazy" />
+        </div>
+        <div class="menu-card-body">
+          <h3>Everything Bagel</h3>
+          <p>Toasted bagel with cream cheese and seasonal toppings.</p>
+          <div class="menu-card-footer">
+            <span class="price">$6.00</span>
+            <a href="#contact" class="btn btn-sm">Order</a>
+          </div>
+        </div>
+      </div>
+      <div class="menu-card">
+        <div class="menu-card-img-wrap">
+          <img src="https://images.unsplash.com/photo-1558961363-fa8fdf82db35?w=400&auto=format&fit=crop&q=75" alt="Chocolate Brownie" loading="lazy" />
+        </div>
+        <div class="menu-card-body">
+          <h3>Dark Chocolate Brownie</h3>
+          <p>Dense, fudgy brownie with a crinkly top. Pairs with any coffee.</p>
+          <div class="menu-card-footer">
+            <span class="price">$4.00</span>
+            <a href="#contact" class="btn btn-sm">Order</a>
+          </div>
+        </div>
+      </div>
+      <div class="menu-card">
+        <div class="menu-card-img-wrap">
+          <img src="https://images.unsplash.com/photo-1490567674331-8a7f0a5dc2df?w=400&auto=format&fit=crop&q=75" alt="Granola Bowl" loading="lazy" />
+        </div>
+        <div class="menu-card-body">
+          <h3>Granola Bowl</h3>
+          <p>House-made granola, seasonal fruit, and thick Greek yogurt.</p>
+          <div class="menu-card-footer">
+            <span class="price">$8.00</span>
+            <a href="#contact" class="btn btn-sm">Order</a>
+          </div>
+        </div>
+      </div>
+      <div class="menu-card menu-card--featured">
+        <span class="badge-tag">New!</span>
+        <div class="menu-card-img-wrap">
+          <img src="https://images.unsplash.com/photo-1493770348161-369560ae357d?w=400&auto=format&fit=crop&q=75" alt="Avocado Toast" loading="lazy" />
+        </div>
+        <div class="menu-card-body">
+          <h3>Avocado Toast</h3>
+          <p>Sourdough, smashed avocado, chili flakes, and poached egg.</p>
+          <div class="menu-card-footer">
+            <span class="price">$10.00</span>
+            <a href="#contact" class="btn btn-sm">Order</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- CONTACT PAGE -->
+  <section id="contact" class="page page-contact">
+
+    <div class="section-header section-header--light">
+      <p class="section-eyebrow">Come say hello</p>
+      <h2 class="section-title">Find Us</h2>
+      <p class="section-sub">We'd love to have you in. Stop by or drop us a message.</p>
+    </div>
+
+    <div class="contact-grid">
+
+      <div class="contact-info">
+
+        <div class="info-block">
+          <div class="info-icon">📍</div>
+          <div>
+            <strong>Our Address</strong>
+            <p>42 Harvest Lane, Tiong Bahru<br/>Singapore 168731</p>
+          </div>
+        </div>
+
+        <div class="info-block">
+          <div class="info-icon">🕐</div>
+          <div>
+            <strong>Opening Hours</strong>
+            <p>Mon – Fri: 7:30am – 8:00pm<br/>Sat – Sun: 8:00am – 9:00pm</p>
+          </div>
+        </div>
+
+        <div class="info-block">
+          <div class="info-icon">📞</div>
+          <div>
+            <strong>Phone & Email</strong>
+            <p>+65 9123 4567<br/>hello@brewedandco.sg</p>
+          </div>
+        </div>
+
+        <div class="social-row">
+          <a href="#" class="social-btn" aria-label="Instagram" title="Instagram">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+            Instagram
+          </a>
+          <a href="#" class="social-btn" aria-label="Facebook" title="Facebook">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            Facebook
+          </a>
+        </div>
+
+      </div>
+
+      <!-- Map -->
+      <div class="map-wrap">
+        <iframe
+          title="Brewed & Co. location"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.8236063754483!2d103.82762531475397!3d1.2843520990622098!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da1bc3d3c74b5b%3A0xa7f2b2f7f7bcaa93!2sTiong%20Bahru%2C%20Singapore!5e0!3m2!1sen!2ssg!4v1680000000000!5m2!1sen!2ssg"
+          width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+
+      <!-- Contact Form -->
+      <div class="contact-form-wrap">
+        <h3>Send us a message</h3>
+        <form id="contactForm" class="contact-form" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" name="name" placeholder="Jane Smith" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="jane@email.com" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Tell us anything — reservations, feedback, or just to say hi!" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">Send Message ✉️</button>
+          <p class="form-success hidden" id="formSuccess">✅ Thanks! We'll get back to you shortly.</p>
+        </form>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <a href="#home" class="footer-logo">Brewed <span>&</span> Co.</a>
+      <p class="footer-copy">© 2025 Brewed & Co. All rights reserved. Made with ☕ in Singapore.</p>
+      <div class="footer-links">
+        <a href="#home">Home</a>
+        <a href="#menu">Menu</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
